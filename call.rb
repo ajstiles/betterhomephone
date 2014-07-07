@@ -11,6 +11,8 @@ before do
   content_type "text/xml", :charset => 'utf-8'
 end
 
+get '/' do ""; end
+
 # Handle POST to /answer endpoint
 post '/answer' do
   response = Twilio::TwiML::Response.new do |r|
